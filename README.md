@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.svg" alt="Logo DPO News" width="140">
-
-# DPO News
+<img src="assets/banner.svg" alt="DPO News" width="440">
 
 **Veille juridique automatisée pour les DPO : un dashboard et des notifications Telegram**
 
