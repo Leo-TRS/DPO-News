@@ -96,13 +96,15 @@ Le filtre s'adapte au secteur de l'organisation. Chaque profil définit :
 - les **autorités et textes** propres au secteur ;
 - les **thèmes à écarter**, sans intérêt pour cette organisation.
 
+> **Seul le profil banque est développé pour l'instant.** Je travaille pour Nickel : DPO News est d'abord conçu pour mes propres besoins de veille dans le secteur bancaire. Les autres profils ci-dessous sont des exemples qui montrent comment l'outil peut s'adapter à d'autres organisations.
+
 Exemples de profils :
 
-| Profil | Sujets mis en avant |
-|---|---|
-| **Banque, néobanque, établissement de paiement** | Fuites de données bancaires, fraude et hameçonnage visant les clients, LCB-FT et KYC, DSP2, DORA, décisions de l'ACPR et de la CNIL sur le secteur financier |
-| **Collectivité territoriale** | Cyberattaques contre les mairies et services publics, vidéoprotection, open data et accès aux documents administratifs (CADA), données des usagers et des agents |
-| **Santé** | Données de santé, hébergement HDS, cyberattaques contre les hôpitaux, recherche médicale |
+| Profil | Statut | Sujets mis en avant |
+|---|---|---|
+| **Banque, néobanque, établissement de paiement** | En développement | Fuites de données bancaires, fraude et hameçonnage visant les clients, LCB-FT et KYC, DSP2, DORA, décisions de l'ACPR et de la CNIL sur le secteur financier |
+| **Collectivité territoriale** | Exemple | Cyberattaques contre les mairies et services publics, vidéoprotection, open data et accès aux documents administratifs (CADA), données des usagers et des agents |
+| **Santé** | Exemple | Données de santé, hébergement HDS, cyberattaques contre les hôpitaux, recherche médicale |
 
 Le profil se règle une fois à l'installation et peut être ajusté à tout moment.
 
@@ -146,7 +148,8 @@ L'avatar du bot est fourni dans [`assets/avatar.png`](assets/avatar.png) (512 ×
 - [x] Résumé des articles par une IA locale
 - [ ] Connexion des trois familles de sources (cybersécurité, grand public, spécialisées)
 - [ ] Filtre : suppression des doublons et sélection des actualités intéressantes
-- [ ] Profils d'organisation : filtre personnalisable par secteur
+- [ ] Profil banque (néobanque, établissement de paiement)
+- [ ] Profils d'organisation : filtre personnalisable pour d'autres secteurs
 - [ ] Stockage des articles et des résumés
 - [ ] Dashboard : fil d'actualité, filtres et recherche
 - [ ] Notifications Telegram
