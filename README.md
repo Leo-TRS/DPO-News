@@ -100,7 +100,9 @@ L'avatar du bot est fourni dans [`assets/avatar.png`](assets/avatar.png) (512 ×
 |---|---|
 | [`assets/logo.png`](assets/logo.png) | Logo complet sur fond transparent (README, en-tête du dashboard) |
 | [`assets/logo-dark.png`](assets/logo-dark.png) | Variante à texte clair pour les fonds sombres |
-| [`assets/icon.png`](assets/icon.png) | Symbole seul, 512 × 512 px (favicon, icône du dashboard) |
+| [`assets/icon.png`](assets/icon.png) | Symbole seul, 512 × 512 px (icône du dashboard) |
+| [`assets/favicon.svg`](assets/favicon.svg) | Symbole simplifié (3 relais, traits épais) pour l'onglet du navigateur |
+| [`assets/favicon.ico`](assets/favicon.ico), [`favicon-32.png`](assets/favicon-32.png), [`apple-touch-icon.png`](assets/apple-touch-icon.png) | Exports du favicon (16/32/48 px, 32 px, 180 px) |
 | [`assets/avatar.png`](assets/avatar.png) | Photo de profil du bot et du canal Telegram |
 
 Le symbole représente un réseau de diffusion : l'actualité part d'une source centrale et rayonne vers ses lecteurs.
