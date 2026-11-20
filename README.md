@@ -17,6 +17,7 @@
 [Présentation](#présentation) ·
 [Sources](#sources) ·
 [Filtrage](#filtrage) ·
+[Profils d'organisation](#profils-dorganisation) ·
 [Dashboard](#dashboard) ·
 [Feuille de route](#feuille-de-route)
 
@@ -29,6 +30,10 @@
 Un DPO doit suivre des dizaines de sources : sites spécialisés en cybersécurité, presse généraliste, médias juridiques, autorités de contrôle. La plupart des articles ne le concernent pas, et les quelques actualités importantes se perdent dans le bruit.
 
 **DPO News** est un **dashboard de news** qui se connecte à toutes ces sources, applique un **filtre** et ne fait ressortir **que les actualités intéressantes** pour un DPO : fuites de données, sanctions, nouvelles règles, décisions de justice, régulation de l'IA.
+
+Ce qui est intéressant dépend de l'organisation : un DPO de banque et un DPO de collectivité ne surveillent pas les mêmes sujets. Le filtre est donc **personnalisable** : on le règle selon le **profil de l'organisation** pour laquelle on travaille.
+
+L'outil tourne **24 h/24 sur un serveur auto-hébergé** : la veille se met à jour en continu, sans action de l'utilisateur.
 
 ---
 
@@ -50,7 +55,7 @@ flowchart LR
 | Étape | Rôle |
 |---|---|
 | Collecte | Lecture des flux RSS de chaque source (titre, lien, chapô, date) |
-| Filtrage | Suppression des doublons et sélection des seules actualités pertinentes pour un DPO |
+| Filtrage | Suppression des doublons et sélection des seules actualités pertinentes, selon le profil de l'organisation |
 | Résumé | Brève de 2 à 4 phrases en style *flash news*, rédigée **uniquement** à partir du texte de l'article : aucune décision, date ou référence inventée |
 | Diffusion | Affichage sur le dashboard et, en option, notification Telegram |
 
@@ -78,7 +83,28 @@ Le filtre :
 
 - **supprime les doublons**, quand plusieurs sources traitent du même sujet ;
 - **écarte le bruit** : articles sans lien avec la protection des données, contenus promotionnels, actualités trop générales ;
-- **garde les actualités utiles à un DPO** : RGPD et données personnelles, sanctions et décisions, fuites et incidents de sécurité, régulation de l'IA (AI Act).
+- **garde les actualités utiles à un DPO** : RGPD et données personnelles, sanctions et décisions, fuites et incidents de sécurité, régulation de l'IA (AI Act) ;
+- **met en avant les sujets propres à l'organisation**, définis dans son profil (voir ci-dessous).
+
+---
+
+## Profils d'organisation
+
+Le filtre s'adapte au secteur de l'organisation. Chaque profil définit :
+
+- les **thèmes prioritaires** à faire remonter ;
+- les **autorités et textes** propres au secteur ;
+- les **thèmes à écarter**, sans intérêt pour cette organisation.
+
+Exemples de profils :
+
+| Profil | Sujets mis en avant |
+|---|---|
+| **Banque, néobanque, établissement de paiement** | Fuites de données bancaires, fraude et hameçonnage visant les clients, LCB-FT et KYC, DSP2, DORA, décisions de l'ACPR et de la CNIL sur le secteur financier |
+| **Collectivité territoriale** | Cyberattaques contre les mairies et services publics, vidéoprotection, open data et accès aux documents administratifs (CADA), données des usagers et des agents |
+| **Santé** | Données de santé, hébergement HDS, cyberattaques contre les hôpitaux, recherche médicale |
+
+Le profil se règle une fois à l'installation et peut être ajusté à tout moment.
 
 ---
 
@@ -89,6 +115,16 @@ L'interface web où consulter la veille filtrée :
 - fil des actualités retenues, chacune avec son résumé, sa source et le lien vers l'article complet ;
 - filtres par thème (RGPD, sanctions, cybersécurité, IA), par type de source et par date ;
 - recherche par mot-clé.
+
+---
+
+## Hébergement
+
+DPO News est conçu pour tourner **en continu, 24 h/24, sur un serveur auto-hébergé** (serveur maison) :
+
+- la collecte se lance automatiquement à intervalle régulier ;
+- le dashboard reste accessible à tout moment ;
+- les articles et les résumés restent sur le serveur : aucune donnée ne part vers un service tiers, et le résumé par IA se fait localement.
 
 ---
 
@@ -110,10 +146,12 @@ L'avatar du bot est fourni dans [`assets/avatar.png`](assets/avatar.png) (512 ×
 - [x] Résumé des articles par une IA locale
 - [ ] Connexion des trois familles de sources (cybersécurité, grand public, spécialisées)
 - [ ] Filtre : suppression des doublons et sélection des actualités intéressantes
+- [ ] Profils d'organisation : filtre personnalisable par secteur
 - [ ] Stockage des articles et des résumés
 - [ ] Dashboard : fil d'actualité, filtres et recherche
 - [ ] Notifications Telegram
 - [ ] Exécution planifiée (collecte automatique à intervalle régulier)
+- [ ] Déploiement 24 h/24 sur le serveur auto-hébergé
 
 ---
 
