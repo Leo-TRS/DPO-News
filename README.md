@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="DPO News" width="440">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+  <img src="assets/logo.png" alt="DPO News - L'outil pour rester à la page" width="460">
+</picture>
 
 **Veille juridique automatisée pour les DPO : un dashboard et des notifications Telegram**
 
@@ -95,11 +98,12 @@ L'avatar du bot est fourni dans [`assets/avatar.png`](assets/avatar.png) (512 ×
 
 | Fichier | Usage |
 |---|---|
-| [`assets/logo.svg`](assets/logo.svg) | Logo principal (README, favicon du dashboard) |
-| [`assets/banner.svg`](assets/banner.svg) | Logo + nom, pour l'en-tête du dashboard |
+| [`assets/logo.png`](assets/logo.png) | Logo complet sur fond transparent (README, en-tête du dashboard) |
+| [`assets/logo-dark.png`](assets/logo-dark.png) | Variante à texte clair pour les fonds sombres |
+| [`assets/icon.png`](assets/icon.png) | Symbole seul, 512 × 512 px (favicon, icône du dashboard) |
 | [`assets/avatar.png`](assets/avatar.png) | Photo de profil du bot et du canal Telegram |
 
-Le cadenas évoque la protection des données, les ondes le flux d'actualité diffusé en continu.
+Le symbole représente un réseau de diffusion : l'actualité part d'une source centrale et rayonne vers ses lecteurs.
 
 ---
 
