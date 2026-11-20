@@ -1,8 +1,8 @@
 <div align="center">
 
-# Bot News
+# DPO News
 
-**Veille juridique automatisée en droit du numérique : un dashboard et des notifications Telegram**
+**Veille juridique automatisée pour les DPO : un dashboard et des notifications Telegram**
 
 ![Python](https://img.shields.io/badge/Python-3.11+-1D4ED8?style=flat-square&logo=python&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
@@ -23,7 +23,7 @@
 
 ## Présentation
 
-**Bot News** rassemble l'actualité juridique du numérique en un seul endroit : protection des données, cybersécurité, régulation de l'IA, droit des contrats informatiques.
+**DPO News** rassemble en un seul endroit l'actualité utile aux délégués à la protection des données : RGPD, décisions de la CNIL et du CEPD, cybersécurité, régulation de l'IA (AI Act).
 
 L'outil :
 
@@ -62,7 +62,7 @@ Les résumés sont générés par un **modèle de langage local** (Ollama) : auc
 Une interface web pour consulter la veille :
 
 - fil des dernières brèves, avec la source et le lien vers l'article complet ;
-- filtres par thème (RGPD, IA, cybersécurité, contrats) et par date ;
+- filtres par thème (RGPD, sanctions, cybersécurité, IA) et par date ;
 - recherche par mot-clé.
 
 ---
