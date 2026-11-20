@@ -1,14 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- Version simplifiée du symbole DPO News : source centrale + 3 relais -->
-  <g stroke="#004AAD" stroke-width="2.6" stroke-linecap="round">
-    <line x1="12" y1="19" x2="16.5" y2="5"/>
-    <line x1="12" y1="19" x2="27" y2="9"/>
-    <line x1="12" y1="19" x2="26.5" y2="26"/>
-  </g>
-  <g fill="#004AAD">
-    <circle cx="12" cy="19" r="8"/>
-    <circle cx="16.5" cy="5" r="3.8"/>
-    <circle cx="27" cy="9.5" r="3.8"/>
-    <circle cx="26.5" cy="26.5" r="3.8"/>
+  <!-- Version simplifiée du symbole DPO News sur fond blanc arrondi -->
+  <rect width="32" height="32" rx="7" fill="#FFFFFF"/>
+  <g transform="translate(2.4 3.7) scale(0.78)">
+    <g stroke="#004AAD" stroke-width="3.2" stroke-linecap="round">
+      <line x1="12" y1="19" x2="16.5" y2="5"/>
+      <line x1="12" y1="19" x2="27" y2="9"/>
+      <line x1="12" y1="19" x2="26.5" y2="26"/>
+    </g>
+    <g fill="#004AAD">
+      <circle cx="12" cy="19" r="8"/>
+      <circle cx="16.5" cy="5" r="3.8"/>
+      <circle cx="27" cy="9.5" r="3.8"/>
+      <circle cx="26.5" cy="26.5" r="3.8"/>
+    </g>
   </g>
 </svg>
