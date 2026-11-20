@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.svg" alt="Logo DPO News" width="140">
+
 # DPO News
 
 **Veille juridique automatisée pour les DPO : un dashboard et des notifications Telegram**
@@ -75,6 +77,8 @@ Le bot envoie chaque nouvelle brève sur un canal Telegram :
 > Résumé en 2 à 4 phrases.
 > 🔗 Lien vers la source
 
+L'avatar du bot est fourni dans [`assets/avatar.png`](assets/avatar.png) (512 × 512 px).
+
 ---
 
 ## Feuille de route
@@ -86,6 +90,18 @@ Le bot envoie chaque nouvelle brève sur un canal Telegram :
 - [ ] Envoi des brèves sur Telegram
 - [ ] Dashboard : fil d'actualité, filtres et recherche
 - [ ] Exécution planifiée (collecte automatique à intervalle régulier)
+
+---
+
+## Identité visuelle
+
+| Fichier | Usage |
+|---|---|
+| [`assets/logo.svg`](assets/logo.svg) | Logo principal (README, favicon du dashboard) |
+| [`assets/banner.svg`](assets/banner.svg) | Logo + nom, pour l'en-tête du dashboard |
+| [`assets/avatar.png`](assets/avatar.png) | Photo de profil du bot et du canal Telegram |
+
+Le bouclier évoque la protection des données, le journal la veille, la pastille la notification.
 
 ---
 
