@@ -99,7 +99,7 @@ L'avatar du bot est fourni dans [`assets/avatar.png`](assets/avatar.png) (512 ×
 | [`assets/banner.svg`](assets/banner.svg) | Logo + nom, pour l'en-tête du dashboard |
 | [`assets/avatar.png`](assets/avatar.png) | Photo de profil du bot et du canal Telegram |
 
-Le bouclier évoque la protection des données, le journal la veille, la pastille la notification.
+Le cadenas évoque la protection des données, les ondes le flux d'actualité diffusé en continu.
 
 ---
 
